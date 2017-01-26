@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "shipit-cli": "^2.0.0",
+    "shipit": "^1.0.2",
     "shipit-deploy": "^2.4.0"
   }
 }

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
+    "build:client": "cd client/galuchat/ && yarn && yarn build && cd ..",
+    "postinstall": "yarn install:client",
+    "install:client": "cd client/galuchat/ && yarn && cd ..",
     "lint": "eslint .",
     "migrate:create": "./node_modules/.bin/db-migrate create --sql-file",
     "migrate:down": "./node_modules/.bin/db-migrate down -e $NODE_ENV",
