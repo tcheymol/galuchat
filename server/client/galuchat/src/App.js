@@ -3,6 +3,7 @@ import './App.css';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Form from './Form.js'
+import Percentage from './Percentage.js'
 
 injectTapEventPlugin();
 
@@ -11,10 +12,9 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="App">
-            <div className="App-header">
-              <h2>Au fait, combien ça fait en minutes ?</h2>
-            </div>
             <Form />
+            <hr className="separator" />
+            <Percentage />
         </div>
       </MuiThemeProvider>
     );

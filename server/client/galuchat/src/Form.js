@@ -29,7 +29,8 @@ class Form extends Component {
 
   render() {
     return (
-      <div className="body">
+      <div className="form-body">
+          <div className="form-form">
           <TextField
             type='number'
             value={this.state.number}
@@ -41,8 +42,7 @@ class Form extends Component {
             onClick={this.submit}
             secondary
           />
-          <br />
-          <br />
+          </div>
           <p className="result">
             {this.state.resultMinutes} minutes {this.state.resultSeconds} secondes
           </p>
